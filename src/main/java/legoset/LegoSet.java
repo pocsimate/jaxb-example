@@ -1,8 +1,10 @@
 package legoset;
 
 import lombok.Data;
+import movie.YearAdapter;
 
 import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.time.Year;
 import java.util.List;
 import java.util.Set;
@@ -13,6 +15,7 @@ import java.util.Set;
 @Data
 public class LegoSet {
 
+    @XmlJavaTypeAdapter(YearAdapter.class)
     private Year year;
     private int pieces;
 

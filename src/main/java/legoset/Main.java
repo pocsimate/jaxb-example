@@ -36,9 +36,6 @@ public class Main {
 
         JAXBHelper.toXML(legoSet, System.out);
 
-
-
-
     }
 
 }
